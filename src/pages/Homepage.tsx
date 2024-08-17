@@ -5,7 +5,7 @@ import { useState } from "react";
 import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import * as z from "zod";
-import Image1 from "../assets/images/image1.png";
+import Image1 from "../assets/images/Image1.png";
 import Image2 from "../assets/images/image2.png";
 import { useNavigate } from "react-router-dom";
 
