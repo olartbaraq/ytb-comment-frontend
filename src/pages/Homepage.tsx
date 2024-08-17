@@ -70,6 +70,7 @@ const Homepage = () => {
   return (
     <div className="w-full flex flex-row items-center">
       {/* Part Text */}
+
       <div className="bg-white w-full md:w-2/3 flex flex-col items-center space-y-4 py-3 ">
         <div className="w-48 md:w-96 flex flex-col items-start space-y-6">
           <div className="w-auto h-auto ">
@@ -83,6 +84,13 @@ const Homepage = () => {
             </h2>
           </div>
         </div>
+
+        {disabled && (
+          <div className="flex items-center space-x-2">
+            <p className="text-3xl text-green-500 font-medium">Loading...</p>
+            <span className="animate-spin inline-block h-10 w-10 border-4 border-blue-500 border-t-transparent rounded-full"></span>
+          </div>
+        )}
 
         <FormProvider {...methods}>
           <form onSubmit={methods.handleSubmit(onSubmit)}>
