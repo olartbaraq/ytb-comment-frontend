@@ -98,7 +98,7 @@ const Homepage = () => {
               <div className="w-full space-y-2 items-start flex flex-col mt-6">
                 <input
                   type="text"
-                  placeholder="_VB39Jo8mAQ"
+                  placeholder="Enter the Youtube Video ID"
                   {...methods.register("videoID")}
                   className="border rounded-md bg-slate-100 h-10 w-44 md:w-72 px-4"
                 />
